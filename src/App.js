@@ -25,6 +25,9 @@ class App extends Component {
             <Route
               path="/posts/:year?/:month?"
               component={Posts} />
+            <Redirect
+              from="/messages"
+              to="/posts" />
             <Route
               path="/admin"
               component={Dashboard} />
