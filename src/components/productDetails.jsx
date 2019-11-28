@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 class ProductDetails extends Component {
   handleSave = () => {
-    // Navigate to /products
+    // this.props.history.push("/products");
+    this.props.history.replace("/products"); //Using this implementation we cannot navigate back to product details page if we click browsers back button after clicking save.
   };
 
   render() {
